@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sign-up page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'signup.css') }}">
+  </head>
+  <body>
+    <h1>Your account creation is one step away</h1>
+    <form method="POST">
+      <label for="username">Enter name to be displayed on your webpage</label>
+      <input type="text" name="username" id="username">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+      <br>
+      <label for="password">Password: (Password should be more than 8 characters long)</label>
+      <input type="password" name="password" id="password">
+      <br>
+      <label for="repass">Re-enter your password:</label>
+      <input type="password" name="repass" id="repass">
+      <input type="submit" value="Create Account" name="submit" id="submit">
+    </form>
+	{% if error %}
+		<p>{{ error }}</p>
+	{% endif %}
+  </body>
+</html>

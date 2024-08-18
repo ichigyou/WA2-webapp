@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Webpage</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'intro.css') }}">
+  </head>
+  
+  <body>
+    <h1><strong>Welcome to your own personal webapge</strong></h1>
+    <p>A website that meets your daily needs</p>
+	
+	<div class="button-container">
+    <br>
+    <p>Don't have an account? Sign up here</p>
+    <form method="GET" action = "/signup">
+		<input type="submit" value="Sign up now">
+	</form>
+	<br>
+	
+    <p>Already have an account? Log in here</p>
+    <form method="GET" action = "/login">
+      <input type="submit" value="Log In">
+    </form>
+	</div>
+  </body>
+</html>

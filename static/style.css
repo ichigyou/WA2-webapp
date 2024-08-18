@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('galaxy.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+	display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Optional: Background color for contrast */
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    color: #FF5733;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.quote-box {
+    position: absolute; /* Change to absolute to keep it at the top right of the page */
+    top: 20px; /* Space from the top of the page */
+    right: 20px; /* Space from the right of the page */
+    width: 300px; /* Fixed width for consistency */
+    height: 150px; /* Fixed height for consistency */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #ffffff; /* Text color */
+    padding: 10px; /* Inner padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    font-size: 1.2rem; /* Font size */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Column layout */
+    justify-content: center; /* Center content vertically */
+    box-sizing: border-box; /* Include padding in width and height */
+}
+
+.quote-box h2 {
+    margin: 0 0 10px 0; /* Space between title and quote */
+    font-size: 1rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px; /* Adjust based on header height */
+}
+
+.blog-form, .clear-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.blog-form label {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.blog-form input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.blog-form input[type="submit"], .clear-buttons input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF5733;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.clear-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.blog-entries {
+    text-align: center;
+}
+
+.blog-entries {
+    display: flex; /* Optional: Use flexbox for layout */
+    flex-direction: column; /* Stack textareas vertically */
+    align-items: center; /* Center textareas horizontally */
+    margin: 20px; /* Add some margin around the entries */
+}
+
+.blog-content {
+    width: 100%; /* Make the textarea take the full width of the parent */
+    height: 150px; /* Set a fixed height for the textarea */
+    resize: vertical; /* Allow vertical resizing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px; /* Optional: Add padding for better user experience */
+    border: 1px solid #ccc; /* Optional: Add a border for visibility */
+    border-radius: 5px; /* Optional: Rounded corners */
+    background-color: #f9f9f9; /* Optional: Light background color */
+}
+
+
+.blog-time {
+    font-size: 1.2rem;
+    font-weight: bold;
+	color:red;
+}
+
+.blog-content {
+    font-size: 1rem;
+    margin-top: 3px;
+}
+
+.calendar {
+    position: absolute; /* Change to absolute to position it relative to the nearest positioned ancestor */
+    top: 120px; /* Space from the top of the page */
+    left: 20px; /* Space from the left of the page */
+    width: 300px; /* Fixed width for consistency */
+    height: 300px; /* Fixed height for consistency */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px; /* Inner padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    box-sizing: border-box; /* Include padding in width and height */
+}
+
+.calendar iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

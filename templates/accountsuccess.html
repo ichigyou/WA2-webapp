@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Account creation success</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'accountsuccess.css') }}">
+	<title>Account creation success</title>
+  </head>
+  <body>
+	<div class="container">
+	<h1>Account creation success!</h1>
+	<h2>Click on the button below to return to login page</h2>
+	<form method="GET" action = "/login">
+      <input type="submit" value="Return to Log in page">
+    </form>
+	</div>
+  </body>
+</html>

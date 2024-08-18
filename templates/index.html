@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Webpage</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome {{ username }}</h1>
+        <div class="quote-box">
+			<h2> Quote of the day:<h2>
+            <p>{{ random_quote }}</p>
+        </div>
+    </div>
+    <div class="main-content">
+        <form method="POST" class="blog-form">
+            <label for="blog_input">Anything on your mind?</label>
+            <input type="text" id="text" name="text" required>
+            <input type="submit" value="Submit" id="submit_blog" name="submit_blog">
+        </form>
+        <form method="POST" class="clear-buttons">
+            <input type="submit" value="Clear All entries" id="clear_all" name="clear_all">
+            <input type="submit" value="Clear last entry" id="clear_last" name="clear_last">
+        </form>
+        <br>
+        <p>Refresh the page if changes failed to load</p>
+        <div class="blog-entries">
+			{% for line in all_blog %}
+				<div class="blog-entry">
+					<p class="blog-time">{{ line[0] }}</p>
+					<textarea class="blog-content" rows="5" cols="1000">{{ line[1] }}</textarea>
+				</div>
+			{% endfor %}
+		</div>
+    </div>
+	
+	<!-- Calendar Widget -->
+    <div class="calendar">
+        <h3>Calendar</h3>
+        <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York" style="border: 0" width="50" height="200" frameborder="0" scrolling="no"></iframe>
+    </div>
+</body>
+</html>
