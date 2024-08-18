@@ -3,6 +3,7 @@ WA2 Webapp (Online personal webpage)
 The inspiration for this wwebapp comes from 2 things:
 1) The though about having your own internet "space"
 2) A place where you are allowed to blog your daily life, with privacy
+
 The webapp has quite a simple design. Specifically, you create an account, log in, and then start blogging away
 The website its built based on Flask and throught the use of a SQL daatabase
 Some of the challenges occured when trying to implement the login framework and through the use of sessions to keep track of whether someone is logged in
