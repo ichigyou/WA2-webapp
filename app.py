@@ -136,33 +136,26 @@ def home():
         blog_input = request.form.get("text")
         if blog_input:
             current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            # yes cambridge my file closes after with block
-            with open("blogs.txt","a") as file:
+            with open("blogs.txt", "a", encoding="utf-8") as file:
                 file.write(f"{current_time}:\n{blog_input}\n")
     
-    # Check if txt file exists
     if os.path.exists("blogs.txt"):
         if 'clear_all' in request.form:
-            # once again cambridge/ mr lam my file closes after with block
-            with open("blogs.txt", "w") as file:
-                    file.write("")
+            with open("blogs.txt", "w", encoding="utf-8") as file:
+                file.write("")
         elif 'clear_last' in request.form:
-            # once again cambridge/ mr lam my file closes after with block
-            with open("blogs.txt", "r") as file:
+            with open("blogs.txt", "r", encoding="utf-8") as file:
                 lines = file.readlines()
 
                 if len(lines) > 1:
                     lines = lines[:-2]
-            # once again cambridge/ mr lam my file closes after with block
-            with open("blogs.txt", "w") as file:
+            with open("blogs.txt", "w", encoding="utf-8") as file:
                 file.writelines(lines)
 
     all_blog = []
     one_line = []
-    # Check if txt file exists
     if os.path.exists("blogs.txt"):
-        # once again cambridge/ mr lam my file closes after with block
-        with open("blogs.txt", "r") as file:
+        with open("blogs.txt", "r", encoding="utf-8") as file:
             for line in file:
                 line = line.rstrip()
                 if len(one_line) == 2:
@@ -170,8 +163,8 @@ def home():
                     one_line = []
                 one_line.append(line)
                     
-        
     return render_template("index.html", random_quote=random_quote, username=username, all_blog=all_blog)
+
 
 if __name__ == '__main__':
     port = int(os.getenv("PORT", 8000))  # Default to port 8000 if PORT is not set
