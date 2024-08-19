@@ -174,5 +174,6 @@ def home():
     return render_template("index.html", random_quote=random_quote, username=username, all_blog=all_blog)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8010)
+    port = int(os.getenv("PORT", 8000))  # Default to port 8000 if PORT is not set
+    app.run(host="0.0.0.0", port=port, debug=True)
 
