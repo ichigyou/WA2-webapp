@@ -4,7 +4,6 @@ from cryptography.fernet import Fernet
 import os
 import random
 from datetime import datetime
-from socket import gethostname
 
 app = Flask(__name__)
 
@@ -175,6 +174,5 @@ def home():
     return render_template("index.html", random_quote=random_quote, username=username, all_blog=all_blog)
 
 if __name__ == '__main__':
-    if 'liveconsole' not in gethostname():
-        app.run()
+    app.run(debug=True, port=8010)
 
