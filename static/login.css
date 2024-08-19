@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 20px;
     text-align: center;
-	background-image: url("WarpTrails001.GIF");
+	background-image: url("static/WarpTrails001.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
