@@ -175,5 +175,6 @@ def home():
     return render_template("index.html", random_quote=random_quote, username=username, all_blog=all_blog)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=10000)
+    if 'liveconsole' not in gethostname():
+        app.run()
 
