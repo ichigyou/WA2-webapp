@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: my-flask-app
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"  # Replace app.py with your Flask app file name
+    port: 8000  # This is the port your app will run on
