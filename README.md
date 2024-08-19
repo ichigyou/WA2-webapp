@@ -1,4 +1,4 @@
-# WA2-webapp
+# WA2-webapp (With the much requested periods)
 WA2 Webapp (Online personal webpage)
 The inspiration for this wwebapp comes from 2 things:
 1) The though about having your own internet "space"
