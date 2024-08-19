@@ -26,10 +26,9 @@ jobs:
         source venv/bin/activate
         pytest
 
-    - name: Deploy
-      run: |
-        source venv/bin/activate
-        python app.py
+    - name: Deploy to Render
       env:
         FLASK_ENCRYPTION_KEY: ${{ secrets.FLASK_ENCRYPTION_KEY }}
         ANOTHER_ENV_VAR: ${{ secrets.ANOTHER_ENV_VAR }}
+      run: |
+        render deploy --service my-flask-app
