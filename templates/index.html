@@ -28,11 +28,12 @@
         <div class="blog-entries">
             {% for line in all_blog %}
                 <div class="blog-entry">
-                    <p class="blog-time">{{ line[0] }}</p>
-                    <div class="blog-content">{{ line[1] }}</div>
+                    <p class="blog-time">{{ line[0] }}</p> <!-- Display time and date here -->
+                    <div class="blog-content">{{ line[1] }}</div> <!-- Display the blog content here -->
                 </div>
             {% endfor %}
         </div>
+
     </div>
 
     <!-- Calendar Widget -->
