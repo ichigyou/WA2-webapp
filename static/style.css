@@ -98,8 +98,9 @@ body {
 
 .blog-entries {
     text-align: center;
-    width: 80%; /* Adjust the width of the blog entries section */
-    max-width: 800px; /* Maximum width for larger screens */
+    width: 90%; /* Increase the width of the blog entries section */
+    max-width: 900px; /* Maximum width for larger screens */
+    margin-top: 20px; /* Add some space at the top */
 }
 
 .blog-entry {
@@ -107,25 +108,28 @@ body {
     margin-bottom: 20px; /* Space between entries */
     background-color: rgba(255, 255, 255, 0.8); /* Light background color */
     border-radius: 5px; /* Rounded corners */
-    padding: 10px; /* Padding inside each entry */
+    padding: 15px; /* Increase padding inside each entry */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Shadow for depth */
     box-sizing: border-box; /* Include padding in width and height */
+    text-align: left; /* Align text to the left */
 }
 
 .blog-time {
     font-size: 1.2rem;
     font-weight: bold;
     color: red;
+    margin-bottom: 10px; /* Space between the time and content */
 }
 
 .blog-content {
     font-size: 1rem;
     color: #333; /* Text color for better readability */
-    margin-top: 5px; /* Space above the content */
     word-wrap: break-word; /* Wrap text inside the content box */
     overflow-wrap: break-word; /* Break long words */
     white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    width: 100%; /* Make the content take up the full width of the entry */
 }
+
 
 .calendar {
     position: absolute; /* Position it relative to the nearest positioned ancestor */
