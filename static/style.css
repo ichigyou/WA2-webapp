@@ -5,7 +5,7 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
-	display: flex; /* Use Flexbox for centering */
+    display: flex; /* Use Flexbox for centering */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     min-height: 100vh; /* Ensure full viewport height */
@@ -101,34 +101,28 @@ body {
     text-align: center;
 }
 
-.blog-entries {
-    display: flex; /* Optional: Use flexbox for layout */
-    flex-direction: column; /* Stack textareas vertically */
-    align-items: center; /* Center textareas horizontally */
-    margin: 20px; /* Add some margin around the entries */
+.blog-entry {
+    width: 100%; /* Make each blog entry take the full width of the parent */
+    margin-bottom: 20px; /* Space between entries */
 }
 
 .blog-content {
-    width: 100%; /* Make the textarea take the full width of the parent */
-    height: 150px; /* Set a fixed height for the textarea */
+    width: 100%; /* Full width of the parent */
+    height: 150px; /* Fixed height for the textarea */
     resize: vertical; /* Allow vertical resizing */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    padding: 10px; /* Optional: Add padding for better user experience */
-    border: 1px solid #ccc; /* Optional: Add a border for visibility */
-    border-radius: 5px; /* Optional: Rounded corners */
-    background-color: #f9f9f9; /* Optional: Light background color */
+    padding: 10px; /* Padding for better user experience */
+    border: 1px solid #ccc; /* Border for visibility */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    font-size: 1rem; /* Font size for content */
+    margin-top: 3px; /* Space above the textarea */
 }
-
 
 .blog-time {
     font-size: 1.2rem;
     font-weight: bold;
-	color:red;
-}
-
-.blog-content {
-    font-size: 1rem;
-    margin-top: 3px;
+    color: red;
 }
 
 .calendar {
