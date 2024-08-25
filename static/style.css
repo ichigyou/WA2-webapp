@@ -111,14 +111,14 @@ body {
     resize: vertical; /* Allow vertical resizing */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     padding: 10px; /* Padding for better user experience */
-    border: none; /* Remove border for a cleaner look */
+    border: 1px solid #ccc; /* Optional: Add a border for visibility */
     border-radius: 5px; /* Optional: Rounded corners */
-    background-color: transparent; /* Make background transparent */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background color */
     font-size: 1rem; /* Font size for content */
     margin-top: 3px; /* Space above the textarea */
-    color: #ffffff; /* Text color for better readability */
+    color: #333; /* Text color for better readability */
+    overflow: auto; /* Enable scrolling if content exceeds the height */
 }
-
 .blog-time {
     font-size: 1.2rem;
     font-weight: bold;
