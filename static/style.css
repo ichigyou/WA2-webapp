@@ -103,22 +103,30 @@ body {
 .blog-entry {
     width: 100%; /* Make each blog entry take the full width of the parent */
     margin-bottom: 20px; /* Space between entries */
+    padding: 10px; /* Add padding around the entry */
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background color */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Shadow for depth */
 }
 
 .blog-content {
     width: 100%; /* Full width of the parent */
     height: auto; /* Allow height to adjust based on content */
     resize: vertical; /* Allow vertical resizing */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
     padding: 10px; /* Padding for better user experience */
     border: 1px solid #ccc; /* Optional: Add a border for visibility */
     border-radius: 5px; /* Optional: Rounded corners */
-    background-color: rgba(255, 255, 255, 0.8); /* Light background color */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly lighter background */
     font-size: 1rem; /* Font size for content */
-    margin-top: 3px; /* Space above the textarea */
+    margin-top: 10px; /* Space above the textarea */
     color: #333; /* Text color for better readability */
     overflow: auto; /* Enable scrolling if content exceeds the height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    max-height: 300px; /* Set a maximum height to control large entries */
 }
+
+
 .blog-time {
     font-size: 1.2rem;
     font-weight: bold;
