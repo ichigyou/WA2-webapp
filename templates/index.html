@@ -9,7 +9,7 @@
     <div class="header">
         <h1>Welcome {{ username }}</h1>
         <div class="quote-box">
-			<h2> Quote of the day:<h2>
+            <h2>Quote of the day:</h2> <!-- Corrected closing tag -->
             <p>{{ random_quote }}</p>
         </div>
     </div>
@@ -25,17 +25,17 @@
         </form>
         <br>
         <p>Refresh the page if changes failed to load</p>
-	<div class="blog-entries">
-	    {% for line in all_blog %}
-	        <div class="blog-entry">
-	            <p class="blog-time">{{ line[0] }}</p>
-	            <textarea class="blog-content" rows="5" readonly>{{ line[1] }}</textarea>
-	        </div>
-	    {% endfor %}
-</div>
+        <div class="blog-entries">
+            {% for line in all_blog %}
+                <div class="blog-entry">
+                    <p class="blog-time">{{ line[0] }}</p>
+                    <textarea class="blog-content" readonly>{{ line[1] }}</textarea>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 	
-	<!-- Calendar Widget -->
+    <!-- Calendar Widget -->
     <div class="calendar">
         <h3>Calendar</h3>
         <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York" style="border: 0" width="50" height="200" frameborder="0" scrolling="no"></iframe>
