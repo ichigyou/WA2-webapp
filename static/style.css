@@ -107,16 +107,16 @@ body {
 
 .blog-content {
     width: 100%; /* Full width of the parent */
-    height: 150px; /* Fixed height for the textarea */
+    height: auto; /* Allow height to adjust based on content */
     resize: vertical; /* Allow vertical resizing */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     padding: 10px; /* Padding for better user experience */
-    border: 1px solid #ccc; /* Border for visibility */
-    border-radius: 5px; /* Rounded corners */
-    background-color: rgba(255, 255, 255, 0.8); /* Light background color with transparency */
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 5px; /* Optional: Rounded corners */
+    background-color: transparent; /* Make background transparent */
     font-size: 1rem; /* Font size for content */
     margin-top: 3px; /* Space above the textarea */
-    color: #333; /* Text color for better readability */
+    color: #ffffff; /* Text color for better readability */
 }
 
 .blog-time {
