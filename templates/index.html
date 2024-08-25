@@ -25,14 +25,14 @@
         </form>
         <br>
         <p>Refresh the page if changes failed to load</p>
-        <div class="blog-entries">
-			{% for line in all_blog %}
-				<div class="blog-entry">
-					<p class="blog-time">{{ line[0] }}</p>
-					<textarea class="blog-content" rows="5" cols="1000">{{ line[1] }}</textarea>
-				</div>
-			{% endfor %}
-		</div>
+	<div class="blog-entries">
+	    {% for line in all_blog %}
+	        <div class="blog-entry">
+	            <p class="blog-time">{{ line[0] }}</p>
+	            <textarea class="blog-content" rows="5" readonly>{{ line[1] }}</textarea>
+	        </div>
+	    {% endfor %}
+</div>
     </div>
 	
 	<!-- Calendar Widget -->
