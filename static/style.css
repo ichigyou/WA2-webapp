@@ -30,7 +30,7 @@ body {
 }
 
 .quote-box {
-    position: absolute; /* Change to absolute to keep it at the top right of the page */
+    position: absolute; /* Keep it at the top right of the page */
     top: 20px; /* Space from the top of the page */
     right: 20px; /* Space from the right of the page */
     width: 300px; /* Fixed width for consistency */
@@ -98,34 +98,19 @@ body {
 
 .blog-entries {
     text-align: center;
+    width: 80%; /* Adjust the width of the blog entries section */
+    max-width: 800px; /* Maximum width for larger screens */
 }
 
 .blog-entry {
     width: 100%; /* Make each blog entry take the full width of the parent */
     margin-bottom: 20px; /* Space between entries */
-    padding: 10px; /* Add padding around the entry */
-    box-sizing: border-box; /* Ensure padding doesn't affect the width */
     background-color: rgba(255, 255, 255, 0.8); /* Light background color */
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Shadow for depth */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside each entry */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Shadow for depth */
+    box-sizing: border-box; /* Include padding in width and height */
 }
-
-.blog-content {
-    width: 100%; /* Full width of the parent */
-    height: auto; /* Allow height to adjust based on content */
-    resize: vertical; /* Allow vertical resizing */
-    padding: 10px; /* Padding for better user experience */
-    border: 1px solid #ccc; /* Optional: Add a border for visibility */
-    border-radius: 5px; /* Optional: Rounded corners */
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly lighter background */
-    font-size: 1rem; /* Font size for content */
-    margin-top: 10px; /* Space above the textarea */
-    color: #333; /* Text color for better readability */
-    overflow: auto; /* Enable scrolling if content exceeds the height */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    max-height: 300px; /* Set a maximum height to control large entries */
-}
-
 
 .blog-time {
     font-size: 1.2rem;
@@ -133,8 +118,17 @@ body {
     color: red;
 }
 
+.blog-content {
+    font-size: 1rem;
+    color: #333; /* Text color for better readability */
+    margin-top: 5px; /* Space above the content */
+    word-wrap: break-word; /* Wrap text inside the content box */
+    overflow-wrap: break-word; /* Break long words */
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+}
+
 .calendar {
-    position: absolute; /* Change to absolute to position it relative to the nearest positioned ancestor */
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
     top: 120px; /* Space from the top of the page */
     left: 20px; /* Space from the left of the page */
     width: 300px; /* Fixed width for consistency */
