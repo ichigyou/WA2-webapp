@@ -9,7 +9,7 @@
     <div class="header">
         <h1>Welcome {{ username }}</h1>
         <div class="quote-box">
-            <h2>Quote of the day:</h2> <!-- Corrected closing tag -->
+            <h2> Quote of the day:</h2>
             <p>{{ random_quote }}</p>
         </div>
     </div>
@@ -29,12 +29,12 @@
             {% for line in all_blog %}
                 <div class="blog-entry">
                     <p class="blog-time">{{ line[0] }}</p>
-                    <textarea class="blog-content" readonly>{{ line[1] }}</textarea>
+                    <div class="blog-content">{{ line[1] }}</div>
                 </div>
             {% endfor %}
         </div>
     </div>
-	
+
     <!-- Calendar Widget -->
     <div class="calendar">
         <h3>Calendar</h3>
